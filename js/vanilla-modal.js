@@ -2,6 +2,7 @@
 
     function Modal (element) {
         this.element = element;
+        this.close();
     }
 
     Modal.prototype.close = function() {

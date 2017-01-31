@@ -1,10 +1,10 @@
 (function (w, d, u) {
-	var modal = $modal('progressModal');
-	var openBtn = document.getElementById('openBtn');
+    var modal = $modal('progressModal');
+    var openBtn = document.getElementById('openBtn');
 
-	console.log(modal);
+    console.log(modal);
 
-	openBtn.onclick = function() {
-		modal.open();
-	}
+    openBtn.onclick = function() {
+        modal.open();
+    }
 })();
