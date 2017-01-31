@@ -1,3 +1,14 @@
+/**
+* Vanilla Modal v.0.1.0
+*
+* Javascript library for Modal manipulation
+*
+* @copyright 2017
+* @author Edison Romero
+* @license http://mit-license.org
+* 
+*/
+
 (function (w, d, u) {
 
     function Modal (element) {
