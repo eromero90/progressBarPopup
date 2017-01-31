@@ -5,4 +5,4 @@
     openBtn.onclick = function() {
         modal.open();
     };
-})();
+})(window, document);
