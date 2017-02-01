@@ -9,7 +9,6 @@
     d.getElementById('totalTarget').innerHTML = '$' + target ;
 
     modal.onClose = function () {
-        console.log('closing...');
         progressBar.reset();
     }
 

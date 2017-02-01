@@ -52,6 +52,57 @@ html * {
     box-sizing: border-box;
 }
 
+body {
+    background-color: #F5F5F5;
+}
+
+body > header {
+    background-color: #000;
+    border-radius: 0px 0px 8px 8px;
+    height: 70px;
+    color: #FFF;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.flat-button {
+    background-color: #5483A1;
+    opacity: 0.8;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.flat-button:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.show-progress {
+    height: 200px;
+    width: 70%;
+    margin: 40px auto;
+    background-color: #FFF;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.show-progress header {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.show-progress p {
+    color: #797979;
+    margin-bottom: 45px;
+}
+
 .modal-content {
     height: 280px;
     width: 50%;
