@@ -49,20 +49,21 @@ table {
 
 html * {
     font-family: helvetica, arial;
+    box-sizing: border-box;
 }
 
 .modal-content {
-    height: 300px;
+    height: 280px;
     width: 50%;
     border: 1px solid #000;
     border-radius: 10px;
-    background-color: #efefef;
+    background-color: #EBEBEB;
 }
 
 .modal-content > header {
-    height: 27px;
+    height: 37px;
     background-color: #000;
-    color: #fff;
+    color: #FFF;
     border-radius: 8px;
     padding-top: 10px;
     padding-left: 5px;
@@ -70,12 +71,81 @@ html * {
 }
 
 .modal-content > section {
-    height: calc(100% - 87px);
-    width: calc(100% - 50px);
-    background-color: #fff;
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-top: 25px;
+    height: calc(100% - 78px);
+    width: calc(100% - 40px);
+    background-color: #FFF;
+    margin: 20px auto;
+    padding-top: 23px;
     border: 1px solid #000;
     border-radius: 8px;
+}
+
+.progress {
+    width: calc(100% - 86px);
+    margin: 0 auto;
+}
+
+.progress:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.progress > span {
+    width: 85px;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 20px;
+    color: #797979;
+}
+
+.progress .target {
+    height: 55px;
+    width: 65px;
+    background-color: #929292;
+    color: #FFF;
+    border: 1px solid #000;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.progress .account-progress, .progress > span, .progress .target {
+    float: left;
+}
+
+.account-progress {
+    height: 17px;
+    width: calc(100% - 195px);
+    background-color: #F8F8F8;
+    margin-top: 20px;
+}
+
+.account-progress .vanilla-progress-label {
+    text-align: right;
+    position: relative;
+    top: 10px;
+    right: -10px;
+}
+
+.account-progress .vanilla-progress, .account-progress {
+    border-radius: 5px;
+}
+
+
+.account-progress .vanilla-progress {
+    background-color: #64B15B;
+}
+
+.status {
+    width: calc(100% - 86px);
+    margin: 50px auto;
+    text-align: center;
+}
+
+.status i {
+    color: #5483A1;
+}
+
+.status span {
+    color: #797979;
 }
