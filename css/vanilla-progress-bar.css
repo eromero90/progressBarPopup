@@ -1,0 +1,30 @@
+.vanilla-progress-bar {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  background-color: #ddd;
+}
+
+.vanilla-progress {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #4CAF50;
+}
+
+.vanilla-label-container {
+  text-align: right;
+}
+
+.vanilla-arrow-label {
+  position: relative;
+  top: 20px;
+  font-size: 25px;
+  right: -3px;
+}
+
+.vanilla-progress-label {
+  text-align: center;
+  line-height: 30px;
+  color: black;
+}

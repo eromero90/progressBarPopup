@@ -13,24 +13,27 @@
 
     function Modal (element) {
         this.element = element;
+        this.onClose = function () {};
         this.close();
+        element.onclick = function(event) {
+            if (event.target == element) {
+                this.close();
+            }
+        }.bind(this);
     }
 
     Modal.prototype.close = function() {
         this.element.style.display = "none";
+        this.onClose();
     };
 
-    Modal.prototype.open = function() {
+    Modal.prototype.open = function(onOpen) {
         this.element.style.display = "block";
+        onOpen();
     };
 
     var core = function(id) {
         var modalElement = d.getElementById(id);
-        w.onclick = function(event) {
-            if (event.target == modalElement) {
-                modalElement.style.display = "none";
-            }
-        }
         return new Modal(modalElement);
     };
 
